@@ -20,20 +20,28 @@ import SocialIcon from '../components/SocialIcon.astro';
     </div>
   </main>
   <script is:inline>
+    const lightColor = '#F6F6F6';
+    const darkColor = '#000000';
+    const theme = document.createElement('meta');
+    theme.setAttribute('name', 'theme-color');
+    document.querySelector('head').appendChild(theme);
     if (
       localStorage.theme === 'dark' ||
       (!('theme' in localStorage) && 
         window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
       document.documentElement.classList.add('dark');
+      theme.setAttribute('content', darkColor);
     } else {
       document.documentElement.classList.remove('dark');
+      theme.setAttribute('content', lightColor);
     }
     window.onload = function () {
       const element = document.getElementById('dark-mode-toggle');
       if (element) {
         element.addEventListener('click', () => {
           document.documentElement.classList.toggle('dark');
+          theme.setAttribute('content', document.documentElement.classList.contains('dark')? darkColor : lightColor);
           localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
         });
       }
