@@ -5,6 +5,5 @@
     "config:base",
     ":maintainLockFilesMonthly",
     "group:allNonMajor"
-  ],
-  
+  ]
 }
