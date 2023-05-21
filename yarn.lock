@@ -436,10 +436,10 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.17.18.tgz#3a8e57153905308db357fd02f57c180ee3a0a1fa"
   integrity sha512-qU25Ma1I3NqTSHJUOKi9sAH1/Mzuvlke0ioMJRthLXKm7JiSKVwFghlGbDLOO2sARECGhja4xYfRAZNPAkooYg==
 
-"@fontsource/inconsolata@^4.5.10":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/inconsolata/-/inconsolata-4.5.10.tgz#0660baa34a78c3b6cc21ece3bc1907bc43275dec"
-  integrity sha512-kShpiWE3RD4LH4YlZPbyE4VMt826DA7Ugw1jNJt54mxpP7nUsI9gflQOLWSJ9AMLkqPLpjza9iZkKRmU8Q7MOQ==
+"@fontsource/inconsolata@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/inconsolata/-/inconsolata-5.0.0.tgz#01ba0df01409b04715045fc9c109e73de14beb76"
+  integrity sha512-K4/rDpERcqBkR17giSGILr/a9E57xuAbfoSC7WLgHSr7AhVvDApUWoLRDwnU1iaPxV2/m4TrqEK79Px5peCWGA==
 
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
