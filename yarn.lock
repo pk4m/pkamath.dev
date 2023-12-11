@@ -504,9 +504,9 @@
   integrity sha512-bfZ0cQ1uZs2PqpulNL5j/3w+GDhP36k1K5c38QdQg+Swy51jFZWWeIkteNsufkQxp986wnqRRsb/bHbY1WQ7TA==
 
 "@fontsource/inconsolata@^5.0.0":
-  version "5.0.15"
-  resolved "https://registry.yarnpkg.com/@fontsource/inconsolata/-/inconsolata-5.0.15.tgz#6182b2c5eaedaaead09f56fa36e94feea971c0b3"
-  integrity sha512-xqFvxBMaYvRSwam5oc7ofc80yvEMkYgrPOpqS9WL+FKTp0jEHCwYaWxHmyJyFcuDcKwo3EnrsAm000L3vS+vMw==
+  version "5.0.16"
+  resolved "https://registry.yarnpkg.com/@fontsource/inconsolata/-/inconsolata-5.0.16.tgz#8237065e6bb0366f66c49cebeea7d1d2d1fa504e"
+  integrity sha512-xcKlutUGBGGwjlxHyWA8b/J+ayGaPkAEYQQfs0NchvnbKz4X8RoIVSoEWg27//4lFoR817mc1Z3yCMXvRajmBg==
 
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
