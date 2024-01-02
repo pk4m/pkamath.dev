@@ -423,6 +423,20 @@
   resolved "https://registry.yarnpkg.com/@fontsource/inconsolata/-/inconsolata-5.0.16.tgz#8237065e6bb0366f66c49cebeea7d1d2d1fa504e"
   integrity sha512-xcKlutUGBGGwjlxHyWA8b/J+ayGaPkAEYQQfs0NchvnbKz4X8RoIVSoEWg27//4lFoR817mc1Z3yCMXvRajmBg==
 
+"@iconify-json/mdi@^1.1.64":
+  version "1.1.64"
+  resolved "https://registry.yarnpkg.com/@iconify-json/mdi/-/mdi-1.1.64.tgz#ef734e33161106485e36b0f92222babe506d3a8d"
+  integrity sha512-zGeo5TjhNFAY6FmSDBLAzDO811t77r6v/mDi7CAL9w5eXqKez6bIjk8R9AL/RHIeq44ALP4Ozr4lMqFTkHr7ug==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/tabler@^1.1.103":
+  version "1.1.103"
+  resolved "https://registry.yarnpkg.com/@iconify-json/tabler/-/tabler-1.1.103.tgz#4f7d7915dd439d9031088d699480818cff866596"
+  integrity sha512-8lCzy0GP4sjhRfFQO2nubytMb1OsEItjJ75ts/cOBPuj6bs9Wwq/Pxycz3DWg7cemTOVxiOyG1lednlhMy4DLg==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify/tools@^3.0.1":
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/@iconify/tools/-/tools-3.0.7.tgz#73e9a9e5f4fe395aae7ea575aa5930d1f91d820c"
@@ -439,7 +453,7 @@
     svgo "3.0.3"
     tar "^6.2.0"
 
-"@iconify/types@^2.0.0":
+"@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==
@@ -900,7 +914,7 @@ array-iterate@^2.0.0:
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-2.0.1.tgz#6efd43f8295b3fee06251d3d62ead4bd9805dd24"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
-astro-icon@^1.0.0:
+astro-icon@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/astro-icon/-/astro-icon-1.0.2.tgz#e4701f3fcfa548f6864b62d5588870e0b32edef9"
   integrity sha512-MGgnjxHnI50bBWasBdt0pw/S9lWharfxhUv1sP2Vj1/KDaT/Cz35ZdlBgb4DKtfzQZREIJN2eQGqmVbvLq5p3w==
