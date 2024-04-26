@@ -1,68 +1,55 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import SocialIcon from "../components/SocialIcon.astro";
+import { Icon } from 'astro-icon/components';
+import Layout from '../layouts/Layout.astro';
+import SocialIcon from '../components/SocialIcon.astro';
 ---
 
 <Layout title="pandu - full stack developer" description="welcome">
-  <div id="tsparticles"></div>
   <main class="flex flex-col justify-center min-h-screen">
+    <div class="self-end">
+      <button id="dark-mode-toggle" class="mb-2 mt-2" aria-label="toggle dark mode">
+        <Icon name="tabler:sun" class="w-6 h-6" />
+      </button>
+    </div>
     <div class="grow flex flex-col justify-center text-center">
       <h1 class="text-3xl mb-2">hey, i'm pandu!</h1>
       <h2 class="text-xl mb-3">full stack developer</h2>
-      <p>This page is currently under development... Please come back later</p>
+      <p>
+        This page is currently under development... Please come back later
+      </p>
       <div class="mt-3 flex flex-row justify-center space-x-5">
-        <SocialIcon
-          icon="mdi:github"
-          label="GitHub"
-          url="https://github.com/pk4m"
-        />
-        <SocialIcon
-          icon="mdi:linkedin"
-          label="LinkedIn"
-          url="https://www.linkedin.com/in/pandurang-kamath/"
-        />
+        <SocialIcon icon="mdi:github" label="GitHub" url="https://github.com/pk4m" />
+        <SocialIcon icon="mdi:linkedin" label="LinkedIn" url="https://www.linkedin.com/in/pandurang-kamath/" />
       </div>
     </div>
   </main>
 
-  <script>
-    import { tsParticles } from "@tsparticles/engine";
-    import { loadLinksPreset } from "@tsparticles/preset-links";
-
-    (async function () {
-      await loadLinksPreset(tsParticles);
-      await tsParticles.load({
-        id: "tsparticles",
-        options: {
-          particles: {
-            links: {
-              enable: true,
-              distance: 100,
-              opacity: 0.5,
-            },
-            number: {
-              value: 55,
-            },
-            size: {
-              value: 3,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            opacity: {
-              value: 0.5,
-            },
-          },
-          retina_detect: true,
-        },
-      });
-    })();
+  <script is:inline>
+    const lightColor = '#F6F6F6';
+    const darkColor = '#000000';
+    const theme = document.createElement('meta');
+    theme.setAttribute('name', 'theme-color');
+    document.querySelector('head').appendChild(theme);
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && 
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+      theme.setAttribute('content', darkColor);
+    } else {
+      document.documentElement.classList.remove('dark');
+      theme.setAttribute('content', lightColor);
+    }
+    window.onload = function () {
+      const element = document.getElementById('dark-mode-toggle');
+      if (element) {
+        element.addEventListener('click', () => {
+          document.documentElement.classList.toggle('dark');
+          theme.setAttribute('content', document.documentElement.classList.contains('dark')? darkColor : lightColor);
+          localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+        });
+      }
+    };
   </script>
 </Layout>
