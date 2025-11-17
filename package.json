@@ -15,7 +15,7 @@
     "@iconify-json/mdi": "^1.1.64",
     "@iconify-json/tabler": "^1.1.103",
     "@tailwindcss/vite": "^4.0.0",
-    "astro": "5.14.0",
+    "astro": "5.15.9",
     "astro-icon": "^1.0.2",
     "install": "^0.13.0",
     "tailwindcss": "^4.0.0",
