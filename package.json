@@ -19,6 +19,6 @@
     "astro-icon": "^1.0.2",
     "install": "^0.13.0",
     "tailwindcss": "^4.0.0",
-    "typescript": "^5.5.4"
+    "typescript": "^6.0.0"
   }
 }
